@@ -1,0 +1,11 @@
+from pyrogram import Client as ghoul, filters
+import time
+
+@ghoul.on_message(filters.command("ping"))
+async def ping(client, message):
+    chat_
+    start_time = time.time()
+    await message.reply("pong")
+    end_time = time.time()
+    response_time = round((end_time - start_time) * 1000, 2)
+    await message.reply(f"Response time: {response_time} ms")
